@@ -414,3 +414,30 @@ window.addEventListener('scroll', () => {
         orb.style.transform = `translateY(${scrollY * (0.1 * (i + 1))}px)`;
     });
 });
+
+// ===== MUSIC SYSTEM =====
+const bgMusic = document.getElementById('bgMusic');
+const musicToggle = document.getElementById('musicToggle');
+const musicIcon = musicToggle.querySelector('.music-icon');
+let isPlaying = false;
+
+function toggleMusic() {
+    if (isPlaying) {
+        bgMusic.pause();
+        musicToggle.classList.remove('playing');
+    } else {
+        bgMusic.play().catch(err => console.log("Audio play deferred:", err));
+        musicToggle.classList.add('playing');
+    }
+    isPlaying = !isPlaying;
+}
+
+musicToggle.addEventListener('click', toggleMusic);
+
+// Auto-play attempt on first user interaction
+document.addEventListener('click', () => {
+    if (!isPlaying && bgMusic.paused) {
+        // Optional: auto-play her song if you want, but browsers usually block it
+        // We'll leave it to the user to click the music button for the best experience
+    }
+}, { once: true });
