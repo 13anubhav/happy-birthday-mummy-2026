@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Mummy 🎂</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Happy Birthday Mummy 🎂">
+    <meta name="description"
+        content="A special birthday Wishes for the world's best Mummy. With all my love, always and forever.">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://13anubhav.github.io/happy-birthday-mummy-2026/">
+    <meta property="og:title" content="Happy Birthday Mummy 🎂">
+    <meta property="og:description" content="A special birthday Wishes for the world's best Mummy 💕">
+    <meta property="og:image" content="https://13anubhav.github.io/happy-birthday-mummy-2026/mummy-img.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Happy Birthday Mummy">
+
+    <!-- Schema.org for Google+ / Google Search -->
+    <meta itemprop="name" content="Happy Birthday Mummy 🎂">
+    <meta itemprop="description" content="A special birthday Wishes for the world's best Mummy 💕">
+    <meta itemprop="image" content="https://13anubhav.github.io/happy-birthday-mummy-2026/mummy-img.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://13anubhav.github.io/happy-birthday-mummy-2026/">
+    <meta name="twitter:title" content="Happy Birthday Mummy 🎂">
+    <meta name="twitter:description" content="A special birthday Wishes for the world's best Mummy 💕">
+    <meta name="twitter:image" content="https://13anubhav.github.io/happy-birthday-mummy-2026/mummy-img.jpg">
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#ff4d8d">
+
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="confetti-canvas"></canvas>
+
+    <nav class="navbar" id="navbar">
+        <a href="#hero" class="nav-logo">Mummy 💕</a>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#hero" class="nav-link">Home</a>
+            <a href="#cake-section" class="nav-link">The Cake</a>
+            <a href="#message" class="nav-link">Message</a>
+            <a href="#memories" class="nav-link">Memories</a>
+            <a href="#wishes" class="nav-link">Wishes</a>
+        </div>
+
+        <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="hearts-container" id="heartsContainer"></div>
+
+
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+
+        <span class="hero-badge">✨ Today is your special day ✨</span>
+        <h1 class="hero-title">Happy Birthday</h1>
+        <h2 class="hero-subtitle">Dearest Mummy</h2>
+        <p class="hero-love">WITH ALL MY LOVE &nbsp;•&nbsp; ALWAYS &amp; FOREVER</p>
+        <div class="hero-cake" id="heroCake" role="button" aria-label="Click for surprise">
+            <img src="mummy-img.jpg" alt="Mummy">
+        </div>
+
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ===== CAKE SECTION ===== -->
+    <section id="cake-section">
+        <span class="section-label">Make a Wish, Mummy</span>
+        <h2 class="section-title">Your Birthday Cake</h2>
+        <p class="cake-subtitle">🕯️ Click each candle to light it &nbsp;•&nbsp; Then make a wish!</p>
+
+        <div class="cake-wrapper" id="cakeWrapper">
+            <svg id="cake-svg" viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="cakeGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ff6b9d" />
+                        <stop offset="100%" style="stop-color:#c2185b" />
+                    </linearGradient>
+                    <linearGradient id="cakeGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ff9ecf" />
+                        <stop offset="100%" style="stop-color:#ff4d8d" />
+                    </linearGradient>
+                    <linearGradient id="cakeGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ffd6eb" />
+                        <stop offset="100%" style="stop-color:#ff80ab" />
+                    </linearGradient>
+                    <linearGradient id="frostingGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#fff0f5" />
+                        <stop offset="100%" style="stop-color:#fce4ec" />
+                    </linearGradient>
+                    <linearGradient id="plateGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#f8f0ff" />
+                        <stop offset="100%" style="stop-color:#e1bee7" />
+                    </linearGradient>
+                    <radialGradient id="flameGrad1" cx="50%" cy="70%" r="60%">
+                        <stop offset="0%" style="stop-color:#fff3e0" />
+                        <stop offset="40%" style="stop-color:#ffd700" />
+                        <stop offset="100%" style="stop-color:#ff6b00;stop-opacity:0" />
+                    </radialGradient>
+                    <radialGradient id="flameGrad2" cx="50%" cy="80%" r="50%">
+                        <stop offset="0%" style="stop-color:#ffffff" />
+                        <stop offset="50%" style="stop-color:#fff9c4" />
+                        <stop offset="100%" style="stop-color:#ffd700;stop-opacity:0" />
+                    </radialGradient>
+                    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" style="stop-color:#ffd700;stop-opacity:0.8" />
+                        <stop offset="100%" style="stop-color:#ffd700;stop-opacity:0" />
+                    </radialGradient>
+                    <filter id="blur-sm">
+                        <feGaussianBlur stdDeviation="2" />
+                    </filter>
+                    <filter id="blur-md">
+                        <feGaussianBlur stdDeviation="5" />
+                    </filter>
+                </defs>
+
+                <!-- Plate -->
+                <ellipse cx="240" cy="358" rx="175" ry="14" fill="url(#plateGrad)" opacity="0.7" />
+                <ellipse cx="240" cy="356" rx="168" ry="10" fill="#e1bee7" />
+
+                <!-- Bottom tier -->
+                <rect x="70" y="290" width="300" height="65" rx="8" fill="url(#cakeGrad1)" />
+                <rect x="70" y="290" width="300" height="20" rx="8" fill="rgba(255,255,255,0.15)" />
+                <rect x="70" y="340" width="300" height="15" rx="0" fill="rgba(0,0,0,0.08)" />
+                <path
+                    d="M70,295 Q85,280 100,295 Q115,280 130,295 Q145,280 160,295 Q175,280 190,295 Q205,280 220,295 Q235,280 250,295 Q265,280 280,295 Q295,280 310,295 Q325,280 340,295 Q355,280 370,295"
+                    fill="none" stroke="url(#frostingGrad)" stroke-width="14" stroke-linecap="round" />
+                <path
+                    d="M70,295 Q85,280 100,295 Q115,280 130,295 Q145,280 160,295 Q175,280 190,295 Q205,280 220,295 Q235,280 250,295 Q265,280 280,295 Q295,280 310,295 Q325,280 340,295 Q355,280 370,295"
+                    fill="none" stroke="white" stroke-width="6" stroke-linecap="round" opacity="0.7" />
+                <circle cx="110" cy="318" r="5" fill="rgba(255,255,255,0.4)" />
+                <circle cx="155" cy="322" r="4" fill="rgba(255,215,0,0.6)" />
+                <circle cx="200" cy="316" r="5" fill="rgba(255,255,255,0.4)" />
+                <circle cx="245" cy="320" r="4" fill="rgba(255,215,0,0.6)" />
+                <circle cx="290" cy="317" r="5" fill="rgba(255,255,255,0.4)" />
+                <circle cx="335" cy="321" r="4" fill="rgba(255,215,0,0.6)" />
+                <text x="220" y="325" text-anchor="middle" font-family="'Dancing Script', cursive" font-size="20"
+                    fill="rgba(255,255,255,0.9)" letter-spacing="1">Mummy</text>
+
+                <!-- Middle tier -->
+                <rect x="110" y="218" width="220" height="72" rx="7" fill="url(#cakeGrad2)" />
+                <rect x="110" y="218" width="220" height="18" rx="7" fill="rgba(255,255,255,0.2)" />
+                <rect x="110" y="272" width="220" height="18" rx="0" fill="rgba(0,0,0,0.07)" />
+                <path
+                    d="M110,222 Q122,208 134,222 Q146,208 158,222 Q170,208 182,222 Q194,208 206,222 Q218,208 230,222 Q242,208 254,222 Q266,208 278,222 Q290,208 302,222 Q314,208 326,222"
+                    fill="none" stroke="url(#frostingGrad)" stroke-width="12" stroke-linecap="round" />
+                <path
+                    d="M110,222 Q122,208 134,222 Q146,208 158,222 Q170,208 182,222 Q194,208 206,222 Q218,208 230,222 Q242,208 254,222 Q266,208 278,222 Q290,208 302,222 Q314,208 326,222"
+                    fill="none" stroke="white" stroke-width="5" stroke-linecap="round" opacity="0.6" />
+                <text x="220" y="258" text-anchor="middle" font-family="'Dancing Script', cursive" font-size="20"
+                    fill="rgba(255,255,255,0.9)" letter-spacing="1">Happy Birthday</text>
+
+                <!-- Top tier -->
+                <rect x="158" y="155" width="124" height="63" rx="6" fill="url(#cakeGrad3)" />
+                <rect x="158" y="155" width="124" height="16" rx="6" fill="rgba(255,255,255,0.25)" />
+                <path
+                    d="M158,159 Q168,147 178,159 Q188,147 198,159 Q208,147 218,159 Q228,147 238,159 Q248,147 258,159 Q268,147 278,159 Q282,149 282,159"
+                    fill="none" stroke="white" stroke-width="11" stroke-linecap="round" opacity="0.9" />
+                <path
+                    d="M158,159 Q168,147 178,159 Q188,147 198,159 Q208,147 218,159 Q228,147 238,159 Q248,147 258,159 Q268,147 278,159 Q282,149 282,159"
+                    fill="none" stroke="white" stroke-width="5" stroke-linecap="round" />
+                <text x="220" y="193" text-anchor="middle" font-family="'Dancing Script', cursive" font-size="16"
+                    fill="rgba(255,255,255,0.95)" letter-spacing="0.5">24th Feb</text>
+
+                <!-- Ambient glow overlay -->
+                <ellipse id="cakeGlowOverlay" cx="220" cy="155" rx="130" ry="40" fill="url(#glowGrad)" opacity="0"
+                    filter="url(#blur-md)" style="transition:opacity 1s ease; pointer-events:none;" />
+
+                <!-- CANDLE 1 -->
+                <g class="candle-group off" id="candle1">
+                    <rect class="candle-body" x="142" y="118" width="14" height="37" rx="3" fill="#ce93d8"
+                        style="transition:filter 0.3s;" />
+                    <rect x="142" y="118" width="14" height="8" rx="3" fill="rgba(255,255,255,0.3)" />
+                    <rect x="142" y="126" width="14" height="3" fill="rgba(255,255,255,0.2)" />
+                    <rect x="142" y="133" width="14" height="3" fill="rgba(255,255,255,0.2)" />
+                    <rect x="142" y="140" width="14" height="3" fill="rgba(255,255,255,0.2)" />
+                    <line x1="149" y1="118" x2="149" y2="112" stroke="#6d4c41" stroke-width="1.5"
+                        stroke-linecap="round" />
+                    <circle class="wick-glow" cx="149" cy="112" r="3" fill="#ffd700" opacity="0"
+                        filter="url(#blur-sm)" />
+                    <circle class="flame-glow" cx="149" cy="106" r="12" fill="url(#glowGrad)" opacity="0"
+                        filter="url(#blur-md)" />
+                    <ellipse class="flame-outer" cx="149" cy="104" rx="7" ry="11" fill="url(#flameGrad1)" opacity="0" />
+                    <ellipse class="flame-inner" cx="149" cy="106" rx="3.5" ry="6" fill="url(#flameGrad2)"
+                        opacity="0" />
+                    <path class="smoke-wisp" d="M149,110 Q151,104 149,98 Q147,92 149,86" stroke="rgba(200,200,220,0.5)"
+                        stroke-width="2" fill="none" stroke-linecap="round" />
+                </g>
+
+                <!-- CANDLE 2 -->
+                <g class="candle-group off" id="candle2">
+                    <rect class="candle-body" x="175" y="110" width="14" height="45" rx="3" fill="#ff80ab"
+                        style="transition:filter 0.3s;" />
+                    <rect x="175" y="110" width="14" height="8" rx="3" fill="rgba(255,255,255,0.3)" />
+                    <rect x="175" y="119" width="14" height="3" fill="rgba(255,255,255,0.2)" />
+                    <rect x="175" y="127" width="14" height="3" fill="rgba(255,255,255,0.2)" />
+                    <rect x="175" y="135" width="14" height="3" fill="rgba(255,255,255,0.2)" />
+                    <rect x="175" y="143" width="14" height="3" fill="rgba(255,255,255,0.2)" />
+                    <line x1="182" y1="110" x2="182" y2="104" stroke="#6d4c41" stroke-width="1.5"
+                        stroke-linecap="round" />
+                    <circle class="wick-glow" cx="182" cy="104" r="3" fill="#ffd700" opacity="0"
+                        filter="url(#blur-sm)" />
+                    <circle class="flame-glow" cx="182" cy="98" r="12" fill="url(#glowGrad)" opacity="0"
+                        filter="url(#blur-md)" />
+                    <ellipse class="flame-outer" cx="182" cy="96" rx="7" ry="12" fill="url(#flameGrad1)" opacity="0" />
+                    <ellipse class="flame-inner" cx="182" cy="98" rx="3.5" ry="6.5" fill="url(#flameGrad2)"
+                        opacity="0" />
+                    <path class="smoke-wisp" d="M182,103 Q184,96 182,89 Q180,82 182,75" stroke="rgba(200,200,220,0.5)"
+                        stroke-width="2" fill="none" stroke-linecap="round" />
+                </g>
+
+                <!-- CANDLE 3 (center, tallest) -->
+                <g class="candle-group off" id="candle3">
+                    <rect class="candle-body" x="212" y="104" width="16" height="51" rx="3" fill="#ffd700"
+                        style="transition:filter 0.3s;" />
+                    <rect x="212" y="104" width="16" height="9" rx="3" fill="rgba(255,255,255,0.35)" />
+                    <rect x="212" y="115" width="16" height="3" fill="rgba(255,255,255,0.2)" />
+                    <rect x="212" y="124" width="16" height="3" fill="rgba(255,255,255,0.2)" />
+                    <rect x="212" y="133" width="16" height="3" fill="rgba(255,255,255,0.2)" />
+                    <rect x="212" y="142" width="16" height="3" fill="rgba(255,255,255,0.2)" />
+                    <line x1="220" y1="104" x2="220" y2="97" stroke="#6d4c41" stroke-width="1.8"
+                        stroke-linecap="round" />
+                    <circle class="wick-glow" cx="220" cy="97" r="4" fill="#ff9500" opacity="0"
+                        filter="url(#blur-sm)" />
+                    <circle class="flame-glow" cx="220" cy="90" r="15" fill="url(#glowGrad)" opacity="0"
+                        filter="url(#blur-md)" />
+                    <ellipse class="flame-outer" cx="220" cy="87" rx="9" ry="15" fill="url(#flameGrad1)" opacity="0" />
+                    <ellipse class="flame-inner" cx="220" cy="90" rx="4.5" ry="8" fill="url(#flameGrad2)" opacity="0" />
+                    <path class="smoke-wisp" d="M220,95 Q223,87 220,79 Q217,71 220,63" stroke="rgba(200,200,220,0.5)"
+                        stroke-width="2" fill="none" stroke-linecap="round" />
+                </g>
+
+                <!-- CANDLE 4 -->
+                <g class="candle-group off" id="candle4">
+                    <rect class="candle-body" x="254" y="110" width="14" height="45" rx="3" fill="#80cbc4"
+                        style="transition:filter 0.3s;" />
+                    <rect x="254" y="110" width="14" height="8" rx="3" fill="rgba(255,255,255,0.3)" />
+                    <rect x="254" y="119" width="14" height="3" fill="rgba(255,255,255,0.2)" />
+                    <rect x="254" y="127" width="14" height="3" fill="rgba(255,255,255,0.2)" />
+                    <rect x="254" y="135" width="14" height="3" fill="rgba(255,255,255,0.2)" />
+                    <rect x="254" y="143" width="14" height="3" fill="rgba(255,255,255,0.2)" />
+                    <line x1="261" y1="110" x2="261" y2="104" stroke="#6d4c41" stroke-width="1.5"
+                        stroke-linecap="round" />
+                    <circle class="wick-glow" cx="261" cy="104" r="3" fill="#ffd700" opacity="0"
+                        filter="url(#blur-sm)" />
+                    <circle class="flame-glow" cx="261" cy="98" r="12" fill="url(#glowGrad)" opacity="0"
+                        filter="url(#blur-md)" />
+                    <ellipse class="flame-outer" cx="261" cy="96" rx="7" ry="12" fill="url(#flameGrad1)" opacity="0" />
+                    <ellipse class="flame-inner" cx="261" cy="98" rx="3.5" ry="6.5" fill="url(#flameGrad2)"
+                        opacity="0" />
+                    <path class="smoke-wisp" d="M261,103 Q263,96 261,89 Q259,82 261,75" stroke="rgba(200,200,220,0.5)"
+                        stroke-width="2" fill="none" stroke-linecap="round" />
+                </g>
+
+                <!-- CANDLE 5 -->
+                <g class="candle-group off" id="candle5">
+                    <rect class="candle-body" x="287" y="118" width="14" height="37" rx="3" fill="#ff7043"
+                        style="transition:filter 0.3s;" />
+                    <rect x="287" y="118" width="14" height="8" rx="3" fill="rgba(255,255,255,0.3)" />
+                    <rect x="287" y="126" width="14" height="3" fill="rgba(255,255,255,0.2)" />
+                    <rect x="287" y="133" width="14" height="3" fill="rgba(255,255,255,0.2)" />
+                    <rect x="287" y="140" width="14" height="3" fill="rgba(255,255,255,0.2)" />
+                    <line x1="294" y1="118" x2="294" y2="112" stroke="#6d4c41" stroke-width="1.5"
+                        stroke-linecap="round" />
+                    <circle class="wick-glow" cx="294" cy="112" r="3" fill="#ffd700" opacity="0"
+                        filter="url(#blur-sm)" />
+                    <circle class="flame-glow" cx="294" cy="106" r="12" fill="url(#glowGrad)" opacity="0"
+                        filter="url(#blur-md)" />
+                    <ellipse class="flame-outer" cx="294" cy="104" rx="7" ry="11" fill="url(#flameGrad1)" opacity="0" />
+                    <ellipse class="flame-inner" cx="294" cy="106" rx="3.5" ry="6" fill="url(#flameGrad2)"
+                        opacity="0" />
+                    <path class="smoke-wisp" d="M294,110 Q296,104 294,98 Q292,92 294,86" stroke="rgba(200,200,220,0.5)"
+                        stroke-width="2" fill="none" stroke-linecap="round" />
+                </g>
+
+                <!-- Sparkles -->
+                <text x="90" y="270" font-size="14" fill="#ffd700" opacity="0.6">✨</text>
+                <text x="350" y="265" font-size="12" fill="#ff80ab" opacity="0.7">✨</text>
+                <text x="100" y="230" font-size="10" fill="#ce93d8" opacity="0.5">⭐</text>
+                <text x="345" y="225" font-size="10" fill="#ffd700" opacity="0.5">⭐</text>
+            </svg>
+        </div>
+
+        <p class="candle-status" id="candleStatus">🕯️ Tap a candle to light it...</p>
+
+        <div class="cake-btns" id="cakeBtns">
+            <button class="cake-btn btn-light" id="btnLightAll">🔥 Light All Candles</button>
+            <button class="cake-btn btn-blow" id="btnBlowAll">💨 Blow Out Candles</button>
+        </div>
+    </section>
+
+    <!-- ===== MESSAGE ===== -->
+    <section id="message">
+        <span class="section-label">A Message From The Heart</span>
+        <h2 class="section-title">To The World's Most<br><em>Incredible</em> Mum</h2>
+
+        <div class="message-grid">
+            <div class="message-text">
+                <p>Today we celebrate <strong>you</strong> — the woman whose laugh fills every room, whose hugs heal
+                    everything, and whose love has shaped who I am.</p>
+                <p>You have given me more than I could ever count: your warmth, your wisdom, your unending support, and
+                    <strong>a love that knows no limits</strong>.
+                </p>
+                <p>Every meal you've made, every night you stayed up, every sacrifice you never called a sacrifice — I
+                    see it all, and my heart is full of gratitude.</p>
+                <p>On this beautiful day, I want you to feel as <strong>loved, cherished, and celebrated</strong> as you
+                    deserve to be — which is endlessly.</p>
+                <span class="message-signature">Happy Birthday Mummy 💕</span>
+            </div>
+            <div class="mummy-img-container" id="mummyImgContainer">
+                <img src="mummy-img-2.jpeg" alt="Dearest Mummy" class="mummy-img">
+                <div class="mummy-img-frame"></div>
+            </div>
+            <div class="flower-card">
+                <span class="flower-emoji">🌸</span>
+                <h3>You Are My Everything</h3>
+                <p>My first friend, my greatest teacher, my safe place — today and always, you are celebrated with every
+                    beat of my heart.</p>
+                <br>
+                <span style="font-size:2rem;">🌺 🌼 🌷</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MEMORIES ===== -->
+    <section id="memories">
+        <span class="section-label">Reasons I Love You</span>
+        <h2 class="section-title">The Things That Make<br>You <em>You</em></h2>
+
+        <div class="memories-grid">
+            <div class="memory-card">
+                <span class="memory-icon">✨</span>
+                <h3>Your Kindness</h3>
+                <p>You have the purest heart. Your compassion and the way you care for everyone is truly beautiful.</p>
+            </div>
+            <div class="memory-card">
+                <span class="memory-icon">🍳</span>
+                <h3>Your Cooking</h3>
+                <p>Every dish you make carries so much love. Food never tastes as good as when it's made by you.</p>
+            </div>
+            <div class="memory-card">
+                <span class="memory-icon">💡</span>
+                <h3>Your Wisdom</h3>
+                <p>Your advice has guided me through life's biggest decisions. You always know what to say.</p>
+            </div>
+            <div class="memory-card">
+                <span class="memory-icon">😂</span>
+                <h3>Your Laughter</h3>
+                <p>Your laugh is the most beautiful sound. It lights up every room and makes everything joyful.</p>
+            </div>
+            <div class="memory-card">
+                <span class="memory-icon">💪</span>
+                <h3>Your Strength</h3>
+                <p>You face every challenge with grace and courage. You've shown me what it means to be resilient.</p>
+            </div>
+            <div class="memory-card">
+                <span class="memory-icon">❤️</span>
+                <h3>Your Unconditional Love</h3>
+                <p>No matter what, your love never wavers. It is the greatest gift I have ever received.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== QUALITIES ===== -->
+    <section id="qualities">
+        <span class="section-label">What Everyone Knows</span>
+        <h2 class="section-title">You Are Simply<br><em>Extraordinary</em></h2>
+
+        <div class="qualities-grid">
+            <div class="quality-item">
+                <span class="quality-emoji">👑</span>
+                <div class="quality-text">
+                    <h4>A True Queen</h4>
+                    <p>Graceful, powerful, and radiant in everything you do.</p>
+                </div>
+            </div>
+            <div class="quality-item">
+                <span class="quality-emoji">🌟</span>
+                <div class="quality-text">
+                    <h4>Shining Star</h4>
+                    <p>Your presence brightens every space and every heart around you.</p>
+                </div>
+            </div>
+            <div class="quality-item">
+                <span class="quality-emoji">🌈</span>
+                <div class="quality-text">
+                    <h4>Bringer of Joy</h4>
+                    <p>You have a rare gift: making everyone around you feel truly special.</p>
+                </div>
+            </div>
+            <div class="quality-item">
+                <span class="quality-emoji">📚</span>
+                <div class="quality-text">
+                    <h4>Fountain of Knowledge</h4>
+                    <p>Your insights and wisdom have been my greatest education in life.</p>
+                </div>
+            </div>
+            <div class="quality-item">
+                <span class="quality-emoji">🕊️</span>
+                <div class="quality-text">
+                    <h4>A Peaceful Soul</h4>
+                    <p>Your calm spirit in any storm is something truly rare and beautiful.</p>
+                </div>
+            </div>
+            <div class="quality-item">
+                <span class="quality-emoji">🎨</span>
+                <div class="quality-text">
+                    <h4>Endlessly Creative</h4>
+                    <p>The way you see beauty in everything and everyone is truly an art.</p>
+                </div>
+            </div>
+            <div class="quality-item">
+                <span class="quality-emoji">🌺</span>
+                <div class="quality-text">
+                    <h4>Forever Blooming</h4>
+                    <p>Like a flower, you grow more beautiful and wonderful with every year.</p>
+                </div>
+            </div>
+            <div class="quality-item">
+                <span class="quality-emoji">💎</span>
+                <div class="quality-text">
+                    <h4>Priceless and Precious</h4>
+                    <p>You are the greatest treasure our family will ever know.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WISHES ===== -->
+    <section id="wishes">
+        <div class="wish-number">🎉</div>
+        <div class="wishes-content">
+            <span class="section-label">Birthday Wishes</span>
+            <h2 class="section-title">May This Year Be<br>Your <em>Best</em> Yet</h2>
+            <p class="wish-text">
+                May every single day of this new year bring you joy that overflows, health that radiates,
+                laughter that echoes, adventures that thrill, and love that surrounds you completely —
+                because you deserve nothing less than the most magical life.
+            </p>
+            <button class="birthday-btn" id="celebrateBtn" onclick="triggerCelebration()">
+                🎊 Celebrate! 🎊
+            </button>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <span class="footer-hearts">💕</span>
+        <p>created with ❤️ by - Anubhav</p>
+        <p style="margin-top:0.5rem;">🌸 Happy Birthday Mummy 🌸</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
